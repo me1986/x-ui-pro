@@ -84,6 +84,14 @@ server {
 	listen 443 ssl http2;
 	listen [::]:80 ipv6only=on;
 	listen [::]:443 ssl http2 ipv6only=on;
+ 	listen 2053 ssl http2;
+	listen [::]:2053 ssl http2 ipv6only=on;
+  	listen 2083 ssl http2;
+	listen [::]:2083 ssl http2 ipv6only=on;
+  	listen 2087 ssl http2;
+	listen [::]:2087 ssl http2 ipv6only=on;
+  	listen 8443 ssl http2;
+	listen [::]:8443 ssl http2 ipv6only=on;
 	http2_push_preload on;
 	index index.html index.htm index.php index.nginx-debian.html;
 	root /var/www/html/;
