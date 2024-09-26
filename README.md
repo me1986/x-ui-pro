@@ -14,7 +14,7 @@
 **Install X-UI-PRO**:dvd::package:
 
 ```
-sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -install yes -panel 0 -ONLY_CF_IP_ALLOW no"
+sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/me1986/x-ui-pro/refs/heads/no443/x-ui-pro.sh) -install yes -panel 0 -ONLY_CF_IP_ALLOW no"
 ```
 > 
 > Recommended -ONLY_CF_IP_ALLOW yes + (Cloudflare<img src="https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/media/cdnon.png" width="34">TURN ON) + SSL/TLS > Full
