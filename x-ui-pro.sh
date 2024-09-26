@@ -68,7 +68,7 @@ if [[ ${INSTALL} == *"y"* ]]; then
 	systemctl daemon-reload && systemctl enable --now nginx
 fi
 systemctl stop nginx 
-fuser -k 80/tcp 80/udp 443/tcp 443/udp 2>/dev/null
+fuser -k 80/tcp 80/udp 8443/tcp 8443/udp 2>/dev/null
 ##################################GET SERVER IPv4-6#####################################################
 IP4_REGEX="^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$"
 IP6_REGEX="([a-f0-9:]+:+)+[a-f0-9]+"
@@ -127,9 +127,9 @@ server {
 	server_tokens off;
 	server_name $MainDomain *.$MainDomain;
 	listen 80;
-	listen 443 ssl http2;
+	listen 8443 ssl http2;
 	listen [::]:80;
-	listen [::]:443 ssl http2;
+	listen [::]:8443 ssl http2;
 	index index.html index.htm index.php index.nginx-debian.html;
 	root /var/www/html/;
 	ssl_protocols TLSv1.2 TLSv1.3;
